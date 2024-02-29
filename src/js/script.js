@@ -9,4 +9,6 @@ if (celsiusOrFahrenheit === 'F' || celsiusOrFahrenheit === 'f') {
 }
 else if (celsiusOrFahrenheit === 'C' || celsiusOrFahrenheit === 'c') {
     alert('Your result is ' + (temperatureValue - 32) * 5 / 9);
+} else {
+    alert('Please enter a valid value')
 }
