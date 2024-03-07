@@ -9,7 +9,7 @@ const product = firstNumber * secondNumber;
 const quotient = firstNumber / secondNumber;
 
 if (isNaN(firstNumber) || isNaN(secondNumber)) {
-    alert('Please enter a valid value or the first operand');
+    alert('\'Please write the correct operand value');
 } else {
     alert(firstNumber + '+' + secondNumber + '=' + sumOfTotal + '\n' +
         firstNumber + '-' + secondNumber + '=' + difference + '\n' +
