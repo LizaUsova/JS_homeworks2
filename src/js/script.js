@@ -1,15 +1,15 @@
 'use strict';
 
 //частина 1
-let yearNowIs = new Date().getFullYear();
-let userYearOfBirth = +prompt('Ваш рік народження?');
+const yearNowIs = new Date().getFullYear();
+const userYearOfBirth = +prompt('Ваш рік народження?');
 
 
 if (userYearOfBirth === null || userYearOfBirth === 0 || isNaN(userYearOfBirth)) {
     alert('Шкода, що Ви не захотіли ввести свій рік народженння');
 } else {
-    let age = yearNowIs - userYearOfBirth;
-    let userNativeCity = prompt('В якому місті ви живите?');
+    const age = yearNowIs - userYearOfBirth;
+    const userNativeCity = prompt('В якому місті ви живите?');
 
     if (userNativeCity === null || userNativeCity === undefined || userNativeCity === '') {
         alert('Шкода, що Ви не захотіли ввести своє місто')
@@ -26,7 +26,7 @@ if (userYearOfBirth === null || userYearOfBirth === 0 || isNaN(userYearOfBirth))
         }
 
 
-        let userFavoriteSport = prompt('Ваш улюблений спорт?');
+        const userFavoriteSport = prompt('Ваш улюблений спорт?');
 
         if (userFavoriteSport === null || userFavoriteSport === '') {
             alert('Шкода, що Ви не захотіли ввести свій улюблений спорт');
