@@ -11,29 +11,43 @@ if (userYearOfBirth === null || userYearOfBirth === 0 || isNaN(userYearOfBirth))
     let age = yearNowIs - userYearOfBirth;
     let userNativeCity = prompt('В якому місті ви живите?');
 
-    if (userNativeCity === null || userNativeCity === undefined || userNativeCity === "") {
+    if (userNativeCity === null || userNativeCity === undefined || userNativeCity === '') {
         alert('Шкода, що Ви не захотіли ввести своє місто')
     } else {
+        let cityMessage;
         if (userNativeCity === 'Київ') {
-            alert('Ваш вік ' + age + '\n' +
-                'Ти живеш у столиці України');
+            cityMessage = 'столиці України';
         } else if (userNativeCity === 'Вашингтон') {
-            alert('Ваш вік ' + age + '\n' +
-                'Ти живеш у столиці Сполучених Штатів Америки');
+            cityMessage = 'столиці Сполучених Штатів Америки';
         } else if (userNativeCity === 'Лондон') {
-            alert('Ваш вік ' + age + '\n' +
-                'Ти живеш у столиці Великої Британії');
+            cityMessage = 'столиці Великої Британії';
         } else {
+            cityMessage = userNativeCity;
+        }
+
+
+        let userFavoriteSport = prompt('Ваш улюблений спорт?');
+
+        if (userFavoriteSport === null || userFavoriteSport === '') {
+            alert('Шкода, що Ви не захотіли ввести свій улюблений спорт');
+        } else {
+            let sportMessage;
+            if (userFavoriteSport === 'футбол') {
+                sportMessage = 'Роналдо';
+            } else if (userFavoriteSport === 'баскетбол') {
+                sportMessage = 'Майл Джордан';
+            } else if (userFavoriteSport === 'формула 1') {
+                sportMessage = 'Михайло Шумахер';
+            } else {
+                sportMessage = 'професійний спортсмен';
+            }
+
             alert('Ваш вік ' + age + '\n' +
-                'Ти живеш у ' + userNativeCity);
+                'Ви живете у ' + cityMessage + '\n' +
+                'Ваш улюблений спорт - ' + userFavoriteSport + '. Хочеш стати як ' + sportMessage + '?');
         }
     }
 }
-
-// let userFavoriteSport = prompt('Ваш улюблений спорт?');
-// if (userFavoriteSport === null) {
-//     alert('Шкода, що Ви не захотіли ввести свій улюблений спорт')
-// }
 
 
 
