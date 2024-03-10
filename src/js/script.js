@@ -1,7 +1,7 @@
 'use strict';
 
-let userNumber = prompt('Введіть число:');
-let number = parseFloat(userNumber);
+const userNumber = prompt('Введіть число:');
+const number = parseFloat(userNumber);
 
 if (!isNaN(number)) {
     let pluralForm;
