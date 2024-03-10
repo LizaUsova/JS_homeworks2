@@ -1,16 +1,16 @@
 'use strict';
 
 //1
-/*let x = 10;
-let y = 7;
+const x = 10;
+const y = 7;
 
-let compare = x > y ? 'x більше за y' : 'x не більше, ніж y';
+const compare = x > y ? 'x більше за y' : 'x не більше, ніж y';
 console.log(compare);
 
 //3
-let userNumber = prompt('ввести ціле число');
-let numberLength = userNumber.length;
-let num = parseInt(userNumber);
+const userNumber = prompt('ввести ціле число');
+const numberLength = userNumber.length;
+const num = parseInt(userNumber);
 
 
 if (!isNaN(num)) {
@@ -36,9 +36,9 @@ if (!isNaN(num)) {
 }
 
 //4
-let firstNumber = +prompt('Введите перше число');
-let secondNumber = +prompt('Введите друге число');
-let thirdNumber = +prompt('Введите третє число');
+const firstNumber = +prompt('Введите перше число');
+const secondNumber = +prompt('Введите друге число');
+const thirdNumber = +prompt('Введите третє число');
 
 if (firstNumber > secondNumber && firstNumber > thirdNumber) {
     alert('Найбільше з введених чисел є ' + firstNumber);
@@ -50,12 +50,12 @@ if (firstNumber > secondNumber && firstNumber > thirdNumber) {
     alert('ви не ввели жодного числа')
 }
 
- */
+
 
 //5
-let a = +prompt('введите довжина для сторона "а" трикутника');
-let b = +prompt('введите довжина для сторона "b" трикутника');
-let c = +prompt('введите довжина для сторона "c" трикутника');
+const a = +prompt('введите довжина для сторона "а" трикутника');
+const b = +prompt('введите довжина для сторона "b" трикутника');
+const c = +prompt('введите довжина для сторона "c" трикутника');
 
 if ((a+b) > c || (c+b) > a || (a+c) > b) {
     alert('з такими довжинами тиркунтик може існувати')
