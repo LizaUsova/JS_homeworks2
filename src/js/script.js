@@ -1,18 +1,20 @@
 'use strict';
 
-const userNumber = prompt('Введіть число:');
-const number = parseFloat(userNumber);
+const userAgeInput = +prompt("Введіть ваш вік");
 
-if (!isNaN(number)) {
-    let pluralForm;
-    if (number === 1) {
-        pluralForm = 'рік';
-    } else if (number > 1 && number < 5) {
-        pluralForm = 'роки';
+if (!isNaN(userAgeInput) && userAgeInput !== null) {
+    const age = parseInt(userAgeInput);
+
+    let yearsWord;
+    if (age % 10 === 1 && age % 100 !== 11) {
+        yearsWord = "рік";
+    } else if (age % 10 >= 2 && age % 10 <= 4 && (age % 100 < 10 || age % 100 >= 20)) {
+        yearsWord = "роки";
     } else {
-        pluralForm = 'років';
+        yearsWord = "років";
     }
-    alert(number + ' ' + pluralForm);
+
+    alert("Вам " + age + " " + yearsWord);
 } else {
-    alert('Це не число');
+    alert("Введіть ваш вік, будь ласка");
 }
