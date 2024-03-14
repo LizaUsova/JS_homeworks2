@@ -52,4 +52,17 @@
 // }
 
 /*9*/
+const number = 36;
+const divisors = [];
 
+for (let i = 1; i <= number; i++) {
+    if (number % i === 0) {
+        divisors.push(i);
+    }
+}
+
+document.write("всі дільники числа " + number + ": " + divisors.join(", ") + '<br>');
+document.write("кількість дільників: " + divisors.length);
+
+
+/*10*/
