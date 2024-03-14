@@ -51,18 +51,22 @@ for (let i = 102; i <=200; i += 3) {
         document.write(i + ', ');
 }
 
-/*9*/
+/*9, 10, 11*/
 const number = 36;
 const divisors = [];
+let sumOfEvenDivisors = 0;
 
 for (let i = 1; i <= number; i++) {
     if (number % i === 0) {
         divisors.push(i);
+        if (i % 2 === 0) {
+            sumOfEvenDivisors += i;
+        }
     }
 }
 
-document.write("всі дільники числа " + number + ": " + divisors.join(", ") + '<br>');
-document.write("кількість дільників: " + divisors.length);
+document.write('всі дільники числа ' + number + ': ' + divisors.join(', ') + '<br>');
+document.write('кількість дільників: ' + divisors.length + '<br>');
+document.write('Сума парних дільників: ' + sumOfEvenDivisors);
 
-
-/*10*/
+/*12*/
