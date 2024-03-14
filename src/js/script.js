@@ -70,3 +70,12 @@ document.write('кількість дільників: ' + divisors.length + '<b
 document.write('Сума парних дільників: ' + sumOfEvenDivisors);
 
 /*12*/
+for (let t = 1; t <= 10; t++) {
+    let row = '';
+    for (let w = 1; w <= 10; w++) {
+        row = row + (t * w) + '\t';
+    }
+    console.log(row);
+}
+
+console.log('Повна таблиця множення від 1 до 10:');
