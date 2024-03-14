@@ -6,49 +6,49 @@ for (let i = 10; i <= 20; i++) {
 }
 
 /*2*/
-for (let i = 10; i <= 20; i++) {
-   document.write (Math.pow(i, 2) + ", ");
+for (let a = 10; a <= 20; a++) {
+   document.write (Math.pow(a, 2) + ", ");
 }
 
 /*3*/
-for (let i = 0; i <= 10; i++) {
-    document.write('7*' + i + '=' + 7 * i + '; \n')
+for (let c = 0; c <= 10; c++) {
+    document.write('7*' + c + '=' + 7 * c + '; \n')
 }
 
 /*4*/
-let sum = 0;
-for (let i = 1; i < 16; i++) {
-    sum += i;
+let suma = 0;
+for (let d = 1; d < 16; d++) {
+    suma += d;
 }
 
-document.write(sum);
+document.write(suma);
 
 /*5*/
-let a = BigInt(1);
-for (let i = 15; i < 36; i++) {
-    a *= BigInt(i);
+let f = BigInt(1);
+for (let g = 15; g < 36; g++) {
+    f *= BigInt(g);
 }
 
-document.write('Добуток усіх цілих чисел від 15 до 35: ' + a);
+document.write('Добуток усіх цілих чисел від 15 до 35: ' + f);
 
 /*6*/
 let sum = 0;
-for (let i = 1; i <= 500; i++) {
-    sum += i;
+for (let h = 1; h <= 500; h++) {
+    sum += h;
 }
 let average = sum / 500;
 document.write('Середнє арифметичне всіх цілих чисел від 1 до 500: ' + average);
 
 /*7*/
-for (let i = 30; i <=80; i++) {
-    if (i % 2 === 0) {
-        document.write(i + ', ');
+for (let k = 30; k <=80; k++) {
+    if (k % 2 === 0) {
+        document.write(k + ', ');
     }
 }
 
 /*8*/
-for (let i = 102; i <=200; i += 3) {
-        document.write(i + ', ');
+for (let l = 102; l <=200; l += 3) {
+        document.write(l + ', ');
 }
 
 /*9, 10, 11*/
@@ -56,11 +56,11 @@ const number = 36;
 const divisors = [];
 let sumOfEvenDivisors = 0;
 
-for (let i = 1; i <= number; i++) {
-    if (number % i === 0) {
-        divisors.push(i);
-        if (i % 2 === 0) {
-            sumOfEvenDivisors += i;
+for (let m = 1; m <= number; m++) {
+    if (number % m === 0) {
+        divisors.push(m);
+        if (m % 2 === 0) {
+            sumOfEvenDivisors += m;
         }
     }
 }
