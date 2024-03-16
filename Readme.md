@@ -17,7 +17,3 @@
 А виклик padString('hello', 6, '*', false) поверне рядок *hello
 
 Виклик padString('hello', 2) поверне 'he' - якщо число менше, ніж розмір введеного рядка, рядок потрібно обрізати за допомогою методу substr.
-
-Додаткові матеріали:
-
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/substr
