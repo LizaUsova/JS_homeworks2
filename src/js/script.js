@@ -1,6 +1,6 @@
 'use strict';
 
-function padString(str, length, symbol = '*', positionRight = true) {
+const padString = function (str, length, symbol = '*', positionRight = true) {
 
     if (typeof str !== 'string' || typeof length !== 'number') {
         return 'помилка: невірні типи аргументів';
